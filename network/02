@@ -1,0 +1,2 @@
+a)	ifconfig | grep 'broadcast'| cut -d' ' -f6 | awk 'NR==1'
+b)	arp -a | cut -d ' ' -f2 | sed 's/(//g' | sed 's/)//g'
