@@ -1,0 +1,1 @@
+netstat -i | cut -d' ' -f1 | uniq | grep -v "Name"
