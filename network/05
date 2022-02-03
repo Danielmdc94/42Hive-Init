@@ -1,1 +1,5 @@
+dig +short a who.int
+
+
+This is probably wrong:
 nslookup who.int | grep 'Address:' | awk 'NR==1' |cut -f2
