@@ -1,0 +1,1 @@
+nslookup who.int | grep 'Address:' | awk 'NR==1' |cut -f2

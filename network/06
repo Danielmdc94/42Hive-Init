@@ -1,0 +1,4 @@
+The file is located here: /etc/resolv.conf
+
+Usually this file contais a set of configuration options for the resolver.
+In this case it only stores de address and domain of the DNS server.
