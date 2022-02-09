@@ -1,0 +1,3 @@
+In the outpout for the last exercise the second device pinged is a NAT,
+which translates the local network addressess into a public address that
+is usable in the "outside world".

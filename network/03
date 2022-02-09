@@ -1,1 +1,1 @@
-networksetup -listallhardwareports | grep 'Ethernet' | awk 'NR==3' | cut -d ' ' -f3
+networksetup -getmacaddress en1

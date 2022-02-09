@@ -1,0 +1,3 @@
+To do so, we need administrator access so we can write in "/etc/hosts" the following:
+
+"46.19.122.85	intra.42.fr"

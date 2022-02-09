@@ -1,3 +1,1 @@
-dig +short a who.int
-
-nslookup who.int | grep 'Address:' | awk 'NR==2' |cut -d ' ' -f2
+nslookup who.int
