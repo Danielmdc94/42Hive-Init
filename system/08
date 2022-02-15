@@ -1,1 +1,3 @@
 ~/.ssh/authorized_keys
+
+# Such file should have permisions '600'
