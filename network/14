@@ -4,4 +4,5 @@
 
 # This file contains a mapping of IP addresses to URLs.
 # The browser uses entries in the file to override the IP-address-to-URL mapping returned by a DNS server.
-# This is useful for testing DNS changes before making a website live.
+# This is useful for testing DNS changes before making a website live
+# Also to block access to a specific website for all local hosts
