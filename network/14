@@ -1,1 +1,7 @@
+# What file contains the local DNS entries?
+
 /etc/hosts
+
+# This file contains a mapping of IP addresses to URLs.
+# The browser uses entries in the file to override the IP-address-to-URL mapping returned by a DNS server.
+# This is useful for testing DNS changes before making a website live.

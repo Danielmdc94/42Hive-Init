@@ -1,1 +1,6 @@
-ipconfig getpacket en0 | grep 'server_identifier'
+# Find the IP that was assigned to you by dhcp server
+
+ipconfig getpacket en0 | grep 'yiaddr'
+
+# The field 'yiaddr' holds the client's IP, this machine's IP within the network.
+# The DHCP IP's address is on the 'server_identifier' field.

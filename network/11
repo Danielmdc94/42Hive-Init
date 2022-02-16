@@ -1,3 +1,6 @@
-In the outpout for the last exercise the second device pinged is a NAT,
-which translates the local network addressess into a public address that
-is usable in the "outside world".
+# Find the name and IP address of the device that makes the link between your local network and the outside world
+traceroute who.int | grep 'nat'
+
+# This device is the Network Address Translation server (NAT server).
+# It translates local network addressess into a public address that is usable in the "outside world".
+# Regardless of each machine's private IP address within the same local network, their public IP is the same.

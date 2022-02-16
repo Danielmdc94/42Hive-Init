@@ -1,2 +1,5 @@
-Using the command "whois" on who.int IP's address (104.17.113.188) shows
-that the provider of that IP is Cloudflare.
+# Find the provider of who.int
+
+# First we find with the command "nslookup" the IP of who.int (104.17.113.188)
+# Then, we use the command "whois" on that IP
+# On the resulting output we can find that the provider of such domain is Cloudflare

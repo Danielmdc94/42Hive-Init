@@ -1,3 +1,12 @@
-To do so, we need administrator access so we can write in "/etc/hosts" the following:
+# Make the intra.42.fr address reroute to 46.19.122.85
 
-"46.19.122.85	intra.42.fr"
+# To do so, we need administrator access so we can write in "/etc/hosts" the following:
+
+46.19.122.85	intra.42.fr
+46.19.122.85	www.intra.42.fr
+
+# When redirecting to a real website it is recommended to add both a version with "www" and without (as above)
+# This is to ensure that in both cases it will be redirected to the desired address
+
+# Also, when redirecting to a custom host is recommended to add an extension at the end (such as ".com")
+# This is to ensure that browsers won't redirect us to search results

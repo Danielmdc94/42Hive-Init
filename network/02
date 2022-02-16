@@ -1,2 +1,7 @@
-a)	ifconfig | grep 'broadcast'| cut -d' ' -f6 | awk 'NR==1'
-b)	arp -a | cut -d ' ' -f2 | sed 's/(//g' | sed 's/)//g'
+# Identify and display the Ethernet interface characteristics
+
+# a) Identify broadcast address:
+ifconfig | grep 'broadcast'| cut -d' ' -f6 | awk 'NR==1'
+
+# b) Identifiy all IP adresses which are part of the same subnet:
+arp -a | cut -d ' ' -f2 | sed 's/(//g' | sed 's/)//g'

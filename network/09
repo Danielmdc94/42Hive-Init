@@ -1,1 +1,8 @@
-163.172.250.16
+# Find the external IP of 42.fr
+
+# The IP of 42.fr is 163.172.250.16
+# Derived from the output of:
+
+nslookup 42.fr
+
+# Also, using the same command on "intra.42.fr" will return similar IP addresses ending in 11, 12 and 13
