@@ -1,1 +1,5 @@
-sudo /etc/init.d/ssh restart
+# Name the command that reboots the SSH service.
+
+systemctl restart ssh
+
+# Needs administrator priviledges

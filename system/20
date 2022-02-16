@@ -1,1 +1,5 @@
+# List all existing users on the VM
+
 awk -F ':' '{print $1}' /etc/passwd
+
+# This includes system users

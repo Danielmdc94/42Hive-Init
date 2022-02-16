@@ -1,1 +1,7 @@
+# Figure out the PID of the SSHD service
+
 pidof sshd
+
+# Shows PID of all sshd processes currently running on all users
+# Next command filters by user:
+# pgrep -u <username> <processname>

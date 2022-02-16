@@ -1,3 +1,7 @@
+# What file contains the RSA keys of systems that are authorized to connect via SSH?
+
 ~/.ssh/authorized_keys
 
 # Such file should have permisions '600'
+# This file holds a list of authorized public keys for servers
+# ~/.ssh/known_hosts, however, contains host keys of SSH servers accessed by the user

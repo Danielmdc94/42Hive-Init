@@ -1,11 +1,13 @@
-As in exercise 'system/17' to connect with an ssh session in a different machine(like this Mac from the virtual debian machine I use the command 'ssh -p 3022 dummy@127.0.0.1'.
+# Explain how connect yourself as new user. (With graphic session and ssh session)
 
-The former IP references this machine's own IP. If it was a different IP this should be changed.
+# As in exercise 'system/17' to connect with an ssh session in a different machine(like this Mac from the virtual debian machine I use the command 'ssh -p 3022 <username>@127.0.0.1'.
 
-The '-p 3022' is the port I configured to link with the port 22(default for ssh) of the guest machine.
+# The former IP references this machine's own IP. If it was a different IP this should be changed.
 
-If I wanted to use this command from the virtual debian machine I would change the port to 22; 'ssh -p 22 dummy@127.0.0.1'.
+# The '-p 3022' is the port I configured to link with the port 22(default for ssh) of the guest machine.
 
-Otherwise, from the virtual debian machine the user can be logged in (No need for ssh connection) with the command 'su - <username>'.
+# If I wanted to use this command from the same virtual debian machine I would change the port to 22; 'ssh -p 22 <username>@127.0.0.1'.
 
-You always need the password to connect or log in, except with sudo or as the root user.
+# Otherwise, from the virtual debian machine the user can be logged in (No need for ssh connection) with the command 'su - <username>'.
+
+# You always need the password to connect or log in, except with sudo or as the root user.

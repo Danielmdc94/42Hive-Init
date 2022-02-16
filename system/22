@@ -1,1 +1,5 @@
+# Find the command that add a new local user
+
 adduser newuser
+
+# Change "newuser" for the name of the user you want to create

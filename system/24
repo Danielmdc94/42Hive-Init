@@ -1,1 +1,10 @@
+# Find the command that list all packages
+
 apt list --installed
+
+# This lists installed packages
+# To see all available packages use:
+
+# apt list
+
+# Does not fit all options in the terminal. Change preferences to see all

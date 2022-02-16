@@ -1,1 +1,5 @@
+# Find the command that kills the background command’s process
+
 kill $(jobs -p)
+
+# Does not work properly using bash

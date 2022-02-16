@@ -2,11 +2,13 @@
 
 yes=yes
 
+echo "Active users:"
+users
 echo "Type the user you want to delete:"
 read user
 echo "Are you sure you want to remove the user '$user' and all its files?[yes/no]"
 read answer
-if [ "$answer" == "$yes" ]
+if [ "$answer" == "$yes" && $user != "root" ]
 then
 	sudo pkill -u $user
 	sudo userdel -r $user

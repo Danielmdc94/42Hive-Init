@@ -1,1 +1,5 @@
-/etc/hostname, for which you need super user privileges.
+# What file has to be modified to make it permanent?
+
+/etc/hostname
+
+# Needs administrator priviledges to write on

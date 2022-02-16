@@ -1,2 +1,7 @@
+# List all services which are started at boot time and name this kind of services
+
 systemctl -at service
-# This services are called 'daemons'
+
+# This services are called 'daemons', processess running in the background
+# They perform certain actions at predefined times or in response to certain events
+#

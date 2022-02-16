@@ -1,1 +1,6 @@
-sudo hostnamectl set-hostname newName
+# What command can you use to rename your system?
+
+hostnamectl set-hostname newName
+
+# Needs administrator priviledges
+# Does not work permanently

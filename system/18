@@ -1,1 +1,5 @@
-sudo systemctl kill ssh
+# Find the command that kills ssh service
+
+systemctl kill ssh
+
+# Needs administrator priviledges
