@@ -1,3 +1,105 @@
-#!/bin/bash
+#!/bin/sh
+
+while :
+do
+
+clear
+echo "   _    _                 __  __                                     "
+echo "  | |  | |               |  \/  |                                    "
+echo "  | |  | |___  ___ _ __  | \  / | __ _ _ __   __ _  __ _  ___ _ __   "
+echo "  | |  | / __|/ _ \ |__| | |\/| |/ _| | '_ \ / _| |/ _| |/ _ \ '__|  "
+echo "  | |__| \__ \  __/ |    | |  | | (_| | | | | (_| | (_| |  __/ |     "
+echo "   \____/|___/\___|_|    |_|  |_|\__,_|_| |_|\__,_|\__, |\___|_|     "
+echo "                                                   __/ /             "
+echo "                                                  |___/              "
+
+echo -e "\nWhat do you want to do\n"
+echo -e "1. Create new user\n"
+echo -e "2. Manage an existing user\n"
+echo -e "3. Display all users\n"
+echo -e "4. Display active sessions by username\n"
+echo -e "5. Exit\n"
+
+	read -rsn1 option
+	case $option in
+		1)
+			clear
+			echo -e "1. Go back\n"
+			echo "New username:"
+			read newuser
+			if [ "$newuser" == "1"]
+			then
+				clear
+				continue
+			else
+				adduser $newuser
+			fi
+			clear
+			;;
+		2)
+			clear
+			echo -e "What user do you want to manage?\n"
+			read user
+
+			echo -e "\n\nChoose an action:\n"
+			echo "1. Change username."
+			echo "2. Give Sudo privilegdes." 
+			echo "3. Delete user."
+			echo "4. Go back."
+
+			read -rsn1 action
+			case $action in
+				1)
+					clear
+					echo "Enter new username"
+					read username
+					usermod --login $username --move-home --home /home/$username $user
+					echo "Done!"
+					echo -e "\n\nPress any key to go back."
+					read -rsn1
+					;;
+				2)
+					clear
+					usermod -aG sudo $user
+					echo "Done!"
+					echo -e "\n\nPress any key to go back."
+					read -rsn1
+					;;
+				3)
+					clear
+					sudo userdel -r $user
+					echo "Done!"
+					echo -e "\n\nPress any key to go back."
+					read -rsn1
+					;;
+				4)
+					;;
+			esac
 
 
+
+
+			;;
+		3)
+			clear
+			echo -e "Existing users:\n"
+			awk -F ':' '$3 >= 1000 && $1 != "nobody" {print $1}' /etc/passwd
+			echo -e "\n\nPress any key to go back."
+			read -rsn1
+			clear
+			;;
+		4)
+			clear
+			echo -e "Open sessions:\n"
+			users
+			echo -e "\n\nPress any key to go back."
+			read -rsn1
+			clear
+			;;
+		5)
+			clear
+			exit 0
+			;;
+
+	esac
+done
