@@ -4,3 +4,4 @@ ssh -p 3022 dpalacio@127.0.0.1
 
 # I configured the port 3022 of the virtual machine to connect to the port 22 (default ssh) of the computer
 # The IP shown is a reference to a machine's own IP
+# If your username in the local machine is the same as the one you are trying to connect to, it is not necesary to type it (ssh -p 3022 127.0.0.1)
